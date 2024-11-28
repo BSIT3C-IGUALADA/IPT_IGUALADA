@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Disables scrolling */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightpink;
+    align-items: center;
+}
+.logo-link {
+    text-decoration: none;
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #ffffff; /* Logo text color */
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+.logo-link:hover {
+    color: #000000; /* Change color on hover */
+}
+
+nav {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.description, .social-media-links, .testimonial {
+    background-color: #fff;
+    border: 2px solid lightpink;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description h2, .social-media-links h3 {
+    color: #ff6584; /* A brighter pink for titles */
+}
+
+.profile-section img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 100%;
+    border: 4px solid lightpink;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 5px;
+    background-color: lightpink;
+    text-align: center;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #333;
+}
+
+.dark-mode .logo-link:hover {
+    color: #ee798b; /* Change color on hover */
+}
+
+.dark-mode nav ul li a {
+    color: white;
+}
+
+.dark-mode .description, .dark-mode .social-media-links,
+.dark-mode .testimonial, .dark-mode footer {
+    border-color: #444;
+    color: black;
+}
+
+.dark-mode .profile-section img {
+    border-color: #444;
+}
+
+.dark-mode footer {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode, .description, .social-media-links, .testimonial:ho {
+    color: #fff;
+
+}

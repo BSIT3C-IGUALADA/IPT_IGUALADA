@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Disables scrolling */
+    background-color: #fffaf3; /* Soft cream background */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightpink;
+    align-items: center;
+}
+.logo-link {
+    text-decoration: none;
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #ffffff; /* Logo text color */
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+.logo-link:hover {
+    color: #000000; /* Change color on hover */
+}
+
+nav {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: white;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.project {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #333;
+}
+
+.dark-mode .logo-link:hover {
+    color: #ee798b; /* Change color on hover */
+}
+
+.dark-mode nav ul li a {
+    color: white;
+}
+
+.dark-mode .description, .dark-mode .social-media-links,
+.dark-mode .testimonial, .dark-mode footer {
+    border-color: #444;
+}
+
+.dark-mode .profile-section img {
+    border-color: #444;
+}
+
+.dark-mode footer {
+    background-color: #333;
+}
